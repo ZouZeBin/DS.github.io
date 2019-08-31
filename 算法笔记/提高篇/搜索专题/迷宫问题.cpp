@@ -1,5 +1,5 @@
 #include<cstdio>
-#include<string>
+#include<cstring>
 #include<queue>
 using namespace std;
 const int maxn=100;
@@ -60,7 +60,7 @@ int main(){
 		} 
 		maze[i][m+1]='\0';
 	}
-	scanf("%d%d%d%d.",&S.x,&S.y,&T.x,&T.y);//起点终点
+	scanf("%d%d%d%d",&S.x,&S.y,&T.x,&T.y);//起点终点
 	S.step=0;//步数初始化
 	printf("%d\n",BFS()); 
 	return 0;
